@@ -69,7 +69,7 @@ function formatDate(str) {
 	if (!month) return year;
 	const names = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
 	if (!day) return `${names[parseInt(month, 10) - 1]} ${year}`;
-	return `${names[parseInt(month, 10) - 1]} ${pad(parseInt(day, 10))} ${year}`;
+	return `${names[parseInt(month, 10) - 1]} ${String(parseInt(day, 10)).padStart(2, '0')} ${year}`;
 }
 
 function parseDate(str) {
