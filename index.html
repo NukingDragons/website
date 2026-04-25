@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>NukingDragons — Home</title>
+
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="https://www.nerdfonts.com/assets/css/webfont.css" />
+
+		<script src="js/vars.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/index.js"></script>
+	</head>
+	<body>
+		<nav>
+			<div class="logo-block">
+				<div class="logo-handle"><span>//</span> NukingDragons</div>
+				<div class="logo-name">Sabrina Andersen</div>
+			</div>
+			<div class="nav-links">
+				<a href="index.html" class="active">Home</a>
+				<a href="writeups.html">Writeups</a>
+				<a href="posts.html">Posts</a>
+				<a href="#about">About</a>
+			</div>
+		</nav>
+
+		<section id="htb">
+			<div class="section-head">
+				<div class="section-label"><span>//</span> hackthebox writeups</div>
+			</div>
+			<div class="htb-grid" id="htb-grid"></div>
+		</section>
+
+		<section id="posts">
+			<div class="section-head">
+				<div class="section-label"><span>//</span> posts</div>
+			</div>
+			<div class="post-list" id="posts-list">
+				<div class="loading">Loading posts…</div>
+			</div>
+		</section>
+
+		<section id="about">
+			<div class="section-head">
+				<div class="section-label"><span>//</span> about</div>
+			</div>
+			<div class="about-grid">
+				<div class="about-cell about-cell--top">
+					<div class="about-bio-links">
+						<div class="about-col">
+							<div class="about-cell-label">Background</div>
+							<p class="about-text">
+								Woman veteran of the U.S. Army, served 5+ years as a 17C20, emulating various APT's to train mobile SoC teams.
+								Following my enlistment, I've been writing content and labs at OffSec since 2025!
+								<br/><br/>
+								I like collecting certs, making HackTheBox writeups for fun, and soon to be blogging about other things I find interesting :3
+							</p>
+						</div>
+						<div class="about-col">
+							<div class="about-cell-label">Links</div>
+							<div class="contact-links">
+								<a class="contact-link" href="https://github.com/NukingDragons" target="_blank" rel="noopener">
+									<span class="cl-label nf nf-cod-github"></span> GitHub
+								</a>
+								<a class="contact-link" href="https://www.linkedin.com/in/sabrina-andersen-baa8b0358" target="_blank" rel="noopener">
+									<span class="cl-label nf nf-dev-linkedin"></span> LinkedIn
+								</a>
+								<a class="contact-link" href="https://www.credential.net/profile/nukingdragons/wallet" target="_blank" rel="noopener">
+									<span class="cl-label nf nf-md-certificate"></span> Credential.net
+								</a>
+								<a class="contact-link" href="https://www.credly.com/users/sabrina-andersen/badges" target="_blank" rel="noopener">
+									<span class="cl-label nf nf-md-certificate"></span> Credly
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="about-cell about-cell--certs">
+					<div class="about-cell-label">Certifications</div>
+					<div class="cert-table-wrap" id="cert-table-wrap">
+						<div class="loading" id="cert-loading">Loading certifications…</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>

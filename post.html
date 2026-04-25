@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>NukingDragons</title>
+
+		<link rel="stylesheet" href="/css/style.css" />
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+
+		<script src="https://cdn.jsdelivr.net/npm/crypto-js@4.2.0/crypto-js.js"></script>
+
+		<script src="js/vars.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/post.js"></script>
+	</head>
+	<body class="post-page">
+		<nav>
+			<div class="logo-block">
+				<div class="logo-handle"><span>//</span> NukingDragons</div>
+				<div class="logo-name">Sabrina Andersen</div>
+			</div>
+			<div class="nav-links">
+				<a href="index.html">Home</a>
+				<a href="writeups.html">Writeups</a>
+				<a href="posts.html">Posts</a>
+				<a href="index.html#about">About</a>
+			</div>
+		</nav>
+
+		<div class="post-shell">
+			<div class="post-header">
+				<div class="post-back"><a href="javascript:history.back()">← back</a></div>
+				<div class="post-meta-bar">
+					<div class="post-category" id="post-category"></div>
+					<div class="post-date-display" id="post-date"></div>
+				</div>
+				<h1 class="post-title-display" id="post-title"></h1>
+
+				<p class="post-desc-display" id="post-desc"></p>
+				<div class="post-htb-meta" id="post-htb-meta" style="display:none">
+					<span class="tag" id="htb-difficulty"></span>
+					<span class="tag tag-os" id="htb-os"></span>
+				</div>
+				<article class="post-content" id="post-content" style="display:none"></article>
+
+				<div class="locked-shell" id="locked-shell" style="display:none">
+					<div class="locked-card">
+						<svg width="28" height="28" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<rect x="2" y="6" width="10" height="7" rx="1.5" stroke="#ff979d" stroke-width="1"/>
+							<path d="M4.5 6V4.5a2.5 2.5 0 015 0V6" stroke="#ff979d" stroke-width="1"/>
+						</svg>
+						<p class="locked-label">This writeup is encrypted.</p>
+						<p class="locked-sub" id="locked-sub"></p>
+						<div class="key-input-row">
+							<input class="key-input" id="key-input" type="text" placeholder="md5sum" autocomplete="off" />
+							<button class="key-btn" id="key-btn">Unlock</button>
+						</div>
+						<div class="key-error" id="key-error">Incorrect key. Try again.</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="post-license" id="post-license" style="display:none">
+				<span>This content is licensed under </span>
+				<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>.
+			</div>
+
+			<div class="post-error" id="post-error" style="display:none">
+				<span class="section-label"><span>//</span> error</span>
+				<p id="post-error-msg"></p>
+			</div>
+		</div>
+	</body>
+</html>
